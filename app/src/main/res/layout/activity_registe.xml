@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/registebg"
+    tools:context="com.example.robotinterction.activity.RegisteActivity">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:text="注册账号"
+    android:padding="3dp"
+    android:textSize="30sp"
+    android:textColor="@color/colorPrimary"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimary"
+        />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:layout_marginTop="3dp">
+        <TableRow >
+            <TextView
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="账号："
+                android:textSize="18sp"/>
+            <EditText
+                android:id="@+id/account"
+                android:layout_height="wrap_content"
+                android:hint="请输入4到8位数字"/>
+        </TableRow>
+        <TableRow >
+            <TextView
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:textSize="18sp"
+                android:text="昵称："/>
+            <EditText
+                android:id="@+id/nickName"
+                android:layout_height="wrap_content"
+                android:hint="请输入您的昵称"/>
+        </TableRow>
+        <TableRow >
+            <TextView
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="密码："
+                android:textSize="18sp"/>
+            <EditText
+                android:id="@+id/passeord"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="请输入6到12位数字或字母"/>
+        </TableRow>
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="确定" />
+        <Button
+            android:id="@+id/cancel_registe"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="取消" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+   <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/change_robotname"
+        android:icon="@drawable/change"
+        android:title="更换机器人昵称"
+        />
+    <item
+        android:id="@+id/change_bg"
+        android:icon="@drawable/set"
+        android:title="设置聊天皮肤"
+       />
+    <item
+        android:id="@+id/change_header"
+        android:title="设置您的头像"
+        android:icon="@drawable/share"
+       />
+       <item
+           android:id="@+id/clear_data"
+           android:title="清空聊天记录"
+           android:icon="@drawable/cleardata"
+           />
+       <item
+           android:id="@+id/relogin"
+           android:title="重新登录"
+           android:icon="@drawable/relogin"
+           />
+       <item
+           android:id="@+id/exit_app"
+           android:title="退出并保存记录"
+           android:icon="@drawable/exitapp"
+           />
+   </group>
+</menu>

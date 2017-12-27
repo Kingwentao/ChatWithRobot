@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:padding="10dp"
+    android:background="?attr/colorPrimary">
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/circle_img"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/initheader"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#308ce2"
+        />
+    <TextView
+        android:id="@+id/maccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Kingwentao@gmail.com"
+        android:textColor="#FFF"
+        android:textSize="14sp"
+        />
+    <TextView
+        android:id="@+id/mnickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/maccount"
+        android:text="Kingwentao"
+        android:textColor="#FFF"
+        android:textSize="14sp"
+        />
+</RelativeLayout>
